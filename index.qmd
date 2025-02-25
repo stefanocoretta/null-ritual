@@ -1,0 +1,13 @@
+---
+title: "Mindless statistics and the 'null ritual'"
+---
+
+This is the website of the workshop *Mindless statistics and the "null ritual"*, part of the [STeW](https://uoelel.github.io/stew.html) series (Statistical Training Workshops) of the Linguistics and English Language department of the University of Edinburgh.
+
+The slides are linked in the main menu and you can find data and code in the GitHub repository: <https://github.com/stefanocoretta/null-ritual>.
+
+|  |  |
+|----|----|
+| **Level** | 🟢🟠🔴 Any level |
+| **Description** | In this workshop we will go through bad statistical practices that are common even among experienced researchers and how to avoid them. In particular, we will talk about the “null ritual”, which is a invalid approach to frequentist statistics commonly used in research. Most of the content of the workshop will be drawn from Gigerenzer’s [Mindless Statistics](https://www.doi.org/10.1016/j.socec.2004.09.033) paper. |
+| **Prerequisites** | Some familiarity with frequentist statistics is useful but not necessary. This workshop is thought for both beginners and experienced researchers or students, whether they normally use quantitative, qualitative or mixed methods. |
