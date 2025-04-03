@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "slides/index.html#quiz",
+    "href": "slides/index.html#quiz",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Quiz",
+    "text": "Quiz\n\nSuppose you have a treatment that you suspect may alter performance on a certain task. You compare the means of your control and experimental groups (say 20 subjects in each sample). Further, suppose you use a simple independent means t-test and your result is signiﬁcant (t = 2.7, d.f. = 18, p = 0.01).\n\nYou have absolutely disproved the null hypothesis (that is, there is no difference between the population means).\nYou have found the probability of the null hypothesis being true.\nYou have absolutely proved your experimental hypothesis (that there is a difference between the population means).\nYou can deduce the probability of the experimental hypothesis being true.\nYou know, if you decide to reject the null hypothesis, the probability that you are making the wrong decision.\nYou have a reliable experimental ﬁnding in the sense that if, hypothetically, the experiment were repeated a great number of times, you would obtain a signiﬁcant result on 99% of occasions."
+  },
+  {
+    "objectID": "slides/index.html#true-or-false",
+    "href": "slides/index.html#true-or-false",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "True or false?",
+    "text": "True or false?"
+  },
+  {
+    "objectID": "slides/index.html#frequentist-statistics",
+    "href": "slides/index.html#frequentist-statistics",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Frequentist statistics",
+    "text": "Frequentist statistics\n\n\nP-values: \\(P(d|H)\\), probability of the difference \\(d\\) (or a more extreme one) given the hypothesis \\(H\\).\nNeyman-Pearson NHST:\n\n\\(H\\) is the “null hypothesis”, to be rejected.\n\\(\\alpha\\) level: \\(p \\ge \\alpha\\) non-significant difference, \\(p &lt; \\alpha\\) significant difference.\n\\(\\beta\\) level: statistical power, probability of detecting a significant difference when there is one.\n\nNull Ritual (Gigerenzer 2004, 2018; Gigerenzer, Krauss, and Vitouch 2004):\n\n\\(H\\) is a “nil hypothesis”: \\(d = 0\\), to be rejected.\n\\(\\alpha = 0.05\\)\n\\(\\beta = 0.8\\)"
+  },
+  {
+    "objectID": "slides/index.html#statistical-power",
+    "href": "slides/index.html#statistical-power",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Statistical power",
+    "text": "Statistical power\n\n\nStatistical power (\\(\\beta\\) level) is affected by sample size.\nOne must determine the sample size needed to achieve the desired statistical power. In Null Ritualistic statistics this is 0.8 (or 80% power).\nProspective power analysis.\n\n\n\n\nTwo examples\n\nEffect of consonant voicing on vowel duration in mono- vs disyllabic words.\nAccuracy in a lexical decision task to investigate shallow morphological representation in L2 speakers.\n\n\n\n\n\n\nGigerenzer, Gerd. 2004. “Mindless Statistics.” The Journal of Socio-Economics 33 (5): 587606. https://doi.org/10.1016/j.socec.2004.09.033.\n\n\n———. 2018. “Statistical Rituals: The Replication Delusion and How We Got There.” Advances in Methods and Practices in Psychological Science 1 (2): 198218. https://doi.org/10.1177/2515245918771329.\n\n\nGigerenzer, Gerd, Stefan Krauss, and Oliver Vitouch. 2004. “The Null Ritual. What You Always Wanted to Know about Significance Testing but Were Afraid to Ask.” In, 391408."
+  },
+  {
+    "objectID": "slides/index.html#the-null-ritual",
+    "href": "slides/index.html#the-null-ritual",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "The ‘null ritual’",
+    "text": "The ‘null ritual’\n\nGigerenzer (2004), Gigerenzer, Krauss, and Vitouch (2004), Gigerenzer (2018).\n\nSet up a statistical null hypothesis of “no mean difference” or “zero correlation.” Don’t specify the predictions of your research hypothesis or of any alternative substantive hypotheses.\nUse 5% as a convention for rejecting the null. If signiﬁcant, accept your research hypothesis. Report the result as p &lt; 0.05, p &lt; 0.01, or p &lt; 0.001 (whichever comes next to the obtained p-value).\nAlways perform this procedure."
+  }
+]
