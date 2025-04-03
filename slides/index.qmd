@@ -14,6 +14,7 @@ execute:
   echo: false
   fig-align: center
 bibliography: references.bib
+csl: unified-style-sheet-for-linguistics.csl
 ---
 
 ```{r}
@@ -50,7 +51,7 @@ Suppose you have a treatment that you suspect may alter performance on a certain
 
 ## The 'null ritual'
 
-::: box-note
+::: box-tip
 @gigerenzer2004, @gigerenzer2004a, @gigerenzer2018.
 
 1.  Set up a statistical null hypothesis of "no mean difference" or "zero correlation." Don't specify the predictions of your research hypothesis or of any alternative substantive hypotheses.
@@ -60,44 +61,41 @@ Suppose you have a treatment that you suspect may alter performance on a certain
 3.  Always perform this procedure.
 :::
 
-## Frequentist statistics
+## Why is it problematic?
 
-::: box-note
--   *P*-values: $P(d|H)$, probability of the difference $d$ (or a more extreme one) given the hypothesis $H$.
+::: box-error
+The null ritual would have been rejected by the statisticians it is attributed to.
 
--   Neyman-Pearson NHST:
-
-    -   $H$ is the "null hypothesis", to be rejected.
-
-    -   $\alpha$ level: $p \ge \alpha$ non-significant difference, $p < \alpha$ significant difference.
-
-    -   $\beta$ level: statistical power, probability of detecting a significant difference when there is one.
-
--   Null Ritual [@gigerenzer2004; @gigerenzer2004a; @gigerenzer2018]:
-
-    -   $H$ is a "nil hypothesis": $d = 0$, to be rejected.
-
-    -   $\alpha = 0.05$
-
-    -   $\beta = 0.8$
+1.  **Fisher** rejected each of the steps above towards the end of his life.
+    1.  "Null" does not mean "nil" but "to be nullified".
+    2.  Fisher thought that using a routine 5% level of signiﬁcance indicated lack of statistical thinking.
+    3.  Null hypothesis testing was the most primitive of analyses (only when no or very little knowledge.
+2.  **Neyman and Pearson** rejected null hypothesis testing and favoured competitive testing between two or more hypotheses.
 :::
 
-## Statistical power
-
-::: box-tip
--   Statistical power ($\beta$ level) is affected by sample size.
-
--   One must determine the sample size needed to achieve the desired statistical power. In Null Ritualistic statistics this is 0.8 (or 80% power).
-
--   Prospective power analysis.
-:::
-
-. . .
+## Fisher's null hypothesis testing
 
 ::: box-note
-Two examples
+1.  Set up a statistical null hypothesis. The null need not be a nil hypothesis (i.e., zero difference).
 
--   Effect of consonant voicing on vowel duration in mono- vs disyllabic words.
+2.  Report the exact level of signiﬁcance (e.g., p = 0.051 or p = 0.049). Do not use a conventional 5% level, and do not talk about accepting or rejecting hypotheses.
 
--   Accuracy in a lexical decision task to investigate shallow morphological representation in L2 speakers.
+3.  Use this procedure only if you know very little about the problem at hand.
+
+[@gigerenzer2004, pp. 590]
+:::
+
+## Neyman–Pearson decision theory
+
+::: box-note
+1.  Set up two statistical hypotheses, H1 and H2, and decide about $\alpha$, $\beta$, and sample size before the experiment, based on subjective cost-beneﬁt considerations. These deﬁne a rejection region for each hypothesis.
+2.  If the data falls into the rejection region of H1, accept H2; otherwise accept H1. Note that accepting a hypothesis does not mean that you believe in it, but only that you act as if it were true.
+3.  The usefulness of the procedure is limited among others to situations where you have a disjunction of hypotheses (e.g., either $\mu_1 = 8$ or $\mu_2 = 10$ is true) and where you can make meaningful cost-beneﬁt trade-offs for choosing alpha and beta.
+
+[@gigerenzer2004, pp. 590-1]
+:::
+
+## References
+
+::: {#refs}
 :::

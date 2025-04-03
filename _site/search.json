@@ -32,6 +32,34 @@
     "href": "slides/index.html#the-null-ritual",
     "title": "Mindless statistics and the ‘null ritual’",
     "section": "The ‘null ritual’",
-    "text": "The ‘null ritual’\n\nGigerenzer (2004), Gigerenzer, Krauss, and Vitouch (2004), Gigerenzer (2018).\n\nSet up a statistical null hypothesis of “no mean difference” or “zero correlation.” Don’t specify the predictions of your research hypothesis or of any alternative substantive hypotheses.\nUse 5% as a convention for rejecting the null. If signiﬁcant, accept your research hypothesis. Report the result as p &lt; 0.05, p &lt; 0.01, or p &lt; 0.001 (whichever comes next to the obtained p-value).\nAlways perform this procedure."
+    "text": "The ‘null ritual’\n\nGigerenzer (2004), Gigerenzer, Krauss & Vitouch (2004), Gigerenzer (2018).\n\nSet up a statistical null hypothesis of “no mean difference” or “zero correlation.” Don’t specify the predictions of your research hypothesis or of any alternative substantive hypotheses.\nUse 5% as a convention for rejecting the null. If signiﬁcant, accept your research hypothesis. Report the result as p &lt; 0.05, p &lt; 0.01, or p &lt; 0.001 (whichever comes next to the obtained p-value).\nAlways perform this procedure."
+  },
+  {
+    "objectID": "slides/index.html#why-is-it-problematic",
+    "href": "slides/index.html#why-is-it-problematic",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Why is it problematic?",
+    "text": "Why is it problematic?\n\nThe null ritual would have been rejected by the statisticians it is attributed to.\n\nFisher rejected each of the steps above towards the end of his life.\n\n“Null” does not mean “nil” but “to be nullified”.\nFisher thought that using a routine 5% level of signiﬁcance indicated lack of statistical thinking.\nNull hypothesis testing was the most primitive of analyses (only when no or very little knowledge.\n\nNeyman and Pearson rejected null hypothesis testing and favoured competitive testing between two or more hypotheses."
+  },
+  {
+    "objectID": "slides/index.html#fishers-null-hypothesis-testing",
+    "href": "slides/index.html#fishers-null-hypothesis-testing",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Fisher’s null hypothesis testing",
+    "text": "Fisher’s null hypothesis testing\n\n\nSet up a statistical null hypothesis. The null need not be a nil hypothesis (i.e., zero difference).\nReport the exact level of signiﬁcance (e.g., p = 0.051 or p = 0.049). Do not use a conventional 5% level, and do not talk about accepting or rejecting hypotheses.\nUse this procedure only if you know very little about the problem at hand.\n\n(Gigerenzer 2004: 590)"
+  },
+  {
+    "objectID": "slides/index.html#neymanpearson-decision-theory",
+    "href": "slides/index.html#neymanpearson-decision-theory",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Neyman–Pearson decision theory",
+    "text": "Neyman–Pearson decision theory\n\n\nSet up two statistical hypotheses, H1 and H2, and decide about \\(\\alpha\\), \\(\\beta\\), and sample size before the experiment, based on subjective cost-beneﬁt considerations. These deﬁne a rejection region for each hypothesis.\nIf the data falls into the rejection region of H1, accept H2; otherwise accept H1. Note that accepting a hypothesis does not mean that you believe in it, but only that you act as if it were true.\nThe usefulness of the procedure is limited among others to situations where you have a disjunction of hypotheses (e.g., either \\(\\mu_1 = 8\\) or \\(\\mu_2 = 10\\) is true) and where you can make meaningful cost-beneﬁt trade-offs for choosing alpha and beta.\n\n(Gigerenzer 2004: 590–1)"
+  },
+  {
+    "objectID": "slides/index.html#references",
+    "href": "slides/index.html#references",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "References",
+    "text": "References\n\n\nGigerenzer, Gerd. 2004. Mindless statistics. The Journal of Socio-Economics 33(5). 587606. https://doi.org/10.1016/j.socec.2004.09.033.\n\n\nGigerenzer, Gerd. 2018. Statistical rituals: The replication delusion and how we got there. Advances in Methods and Practices in Psychological Science 1(2). 198218. https://doi.org/10.1177/2515245918771329.\n\n\nGigerenzer, Gerd, Stefan Krauss & Oliver Vitouch. 2004. The null ritual. What you always wanted to know about significance testing but were afraid to ask. In, 391408."
   }
 ]
