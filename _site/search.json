@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "",
+    "text": "This is the website of the workshop Mindless statistics and the “null ritual”, part of the STeW series (Statistical Training Workshops) of the Linguistics and English Language department of the University of Edinburgh.\nThe slides are linked in the main menu and you can find data and code in the GitHub repository: https://github.com/stefanocoretta/null-ritual.\n\n\n\nLevel\n🟢🟠🔴 Any level\n\n\nDescription\nIn this workshop we will go through bad statistical practices that are common even among experienced researchers and how to avoid them. In particular, we will talk about the “null ritual”, which is a invalid approach to frequentist statistics commonly used in research. Most of the content of the workshop will be drawn from Gigerenzer’s Mindless Statistics paper.\n\n\nPrerequisites\nSome familiarity with frequentist statistics is useful but not necessary. This workshop is thought for both beginners and experienced researchers or students, whether they normally use quantitative, qualitative or mixed methods."
+  },
+  {
     "objectID": "slides/index.html#quiz",
     "href": "slides/index.html#quiz",
     "title": "Mindless statistics and the ‘null ritual’",
@@ -14,18 +28,67 @@
     "text": "True or false?"
   },
   {
-    "objectID": "slides/index.html#frequentist-statistics",
-    "href": "slides/index.html#frequentist-statistics",
+    "objectID": "slides/index.html#growing-plants-on-mars",
+    "href": "slides/index.html#growing-plants-on-mars",
     "title": "Mindless statistics and the ‘null ritual’",
-    "section": "Frequentist statistics",
-    "text": "Frequentist statistics\n\n\nP-values: \\(P(d|H)\\), probability of the difference \\(d\\) (or a more extreme one) given the hypothesis \\(H\\).\nNeyman-Pearson NHST:\n\n\\(H\\) is the “null hypothesis”, to be rejected.\n\\(\\alpha\\) level: \\(p \\ge \\alpha\\) non-significant difference, \\(p &lt; \\alpha\\) significant difference.\n\\(\\beta\\) level: statistical power, probability of detecting a significant difference when there is one.\n\nNull Ritual (Gigerenzer 2004, 2018; Gigerenzer, Krauss, and Vitouch 2004):\n\n\\(H\\) is a “nil hypothesis”: \\(d = 0\\), to be rejected.\n\\(\\alpha = 0.05\\)\n\\(\\beta = 0.8\\)"
+    "section": "Growing plants on Mars",
+    "text": "Growing plants on Mars"
   },
   {
-    "objectID": "slides/index.html#statistical-power",
-    "href": "slides/index.html#statistical-power",
+    "objectID": "slides/index.html#will-different-light-colour-affect-growth",
+    "href": "slides/index.html#will-different-light-colour-affect-growth",
     "title": "Mindless statistics and the ‘null ritual’",
-    "section": "Statistical power",
-    "text": "Statistical power\n\n\nStatistical power (\\(\\beta\\) level) is affected by sample size.\nOne must determine the sample size needed to achieve the desired statistical power. In Null Ritualistic statistics this is 0.8 (or 80% power).\nProspective power analysis.\n\n\n\n\nTwo examples\n\nEffect of consonant voicing on vowel duration in mono- vs disyllabic words.\nAccuracy in a lexical decision task to investigate shallow morphological representation in L2 speakers.\n\n\n\n\n\n\nGigerenzer, Gerd. 2004. “Mindless Statistics.” The Journal of Socio-Economics 33 (5): 587606. https://doi.org/10.1016/j.socec.2004.09.033.\n\n\n———. 2018. “Statistical Rituals: The Replication Delusion and How We Got There.” Advances in Methods and Practices in Psychological Science 1 (2): 198218. https://doi.org/10.1177/2515245918771329.\n\n\nGigerenzer, Gerd, Stefan Krauss, and Oliver Vitouch. 2004. “The Null Ritual. What You Always Wanted to Know about Significance Testing but Were Afraid to Ask.” In, 391408."
+    "section": "Will different light colour affect growth?",
+    "text": "Will different light colour affect growth?"
+  },
+  {
+    "objectID": "slides/index.html#will-different-light-colour-affect-growth-1",
+    "href": "slides/index.html#will-different-light-colour-affect-growth-1",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Will different light colour affect growth?",
+    "text": "Will different light colour affect growth?"
+  },
+  {
+    "objectID": "slides/index.html#will-different-light-colour-affect-growth-2",
+    "href": "slides/index.html#will-different-light-colour-affect-growth-2",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Will different light colour affect growth?",
+    "text": "Will different light colour affect growth?"
+  },
+  {
+    "objectID": "slides/index.html#will-different-light-colour-affect-growth-3",
+    "href": "slides/index.html#will-different-light-colour-affect-growth-3",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Will different light colour affect growth?",
+    "text": "Will different light colour affect growth?"
+  },
+  {
+    "objectID": "slides/index.html#the-p-value",
+    "href": "slides/index.html#the-p-value",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "The \\(p\\)-value",
+    "text": "The \\(p\\)-value"
+  },
+  {
+    "objectID": "slides/index.html#the-p-value-1",
+    "href": "slides/index.html#the-p-value-1",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "The \\(p\\)-value",
+    "text": "The \\(p\\)-value"
+  },
+  {
+    "objectID": "slides/index.html#the-p-value-2",
+    "href": "slides/index.html#the-p-value-2",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "The \\(p\\)-value",
+    "text": "The \\(p\\)-value"
+  },
+  {
+    "objectID": "slides/index.html#the-p-value-3",
+    "href": "slides/index.html#the-p-value-3",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "The \\(p\\)-value",
+    "text": "The \\(p\\)-value"
   },
   {
     "objectID": "slides/index.html#the-null-ritual",
@@ -54,6 +117,13 @@
     "title": "Mindless statistics and the ‘null ritual’",
     "section": "Neyman–Pearson decision theory",
     "text": "Neyman–Pearson decision theory\n\n\nSet up two statistical hypotheses, H1 and H2, and decide about \\(\\alpha\\), \\(\\beta\\), and sample size before the experiment, based on subjective cost-beneﬁt considerations. These deﬁne a rejection region for each hypothesis.\nIf the data falls into the rejection region of H1, accept H2; otherwise accept H1. Note that accepting a hypothesis does not mean that you believe in it, but only that you act as if it were true.\nThe usefulness of the procedure is limited among others to situations where you have a disjunction of hypotheses (e.g., either \\(\\mu_1 = 8\\) or \\(\\mu_2 = 10\\) is true) and where you can make meaningful cost-beneﬁt trade-offs for choosing alpha and beta.\n\n(Gigerenzer 2004: 590–1)"
+  },
+  {
+    "objectID": "slides/index.html#level-of-significance",
+    "href": "slides/index.html#level-of-significance",
+    "title": "Mindless statistics and the ‘null ritual’",
+    "section": "Level of significance",
+    "text": "Level of significance\n\n\nEarly Fisher\n\nMere convention of 5%.\n\nNeyman and Pearson\n\n\\(\\alpha\\): probability of wrongly rejecting \\(H_1\\) (vs \\(H_2\\)), Type-I error\n\nLater Fisher\n\nRejects idea of convention and Type-I and II errors.\nExact level of significance, i.e. exact \\(p\\).\n“You communicate information; you do not make yes–no decisions.” (Gigerenzer 2004: 593)."
   },
   {
     "objectID": "slides/index.html#references",

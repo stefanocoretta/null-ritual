@@ -12,7 +12,7 @@
 
   <meta name="author" content="Dr Stefano Coretta">
   <meta name="dcterms.date" content="2025-05-01">
-  <title>null-ritual – Mindless statistics and the ‘null ritual’</title>
+  <title>Null ritual – Mindless statistics and the ‘null ritual’</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -143,6 +143,13 @@
       margin-right: 0; 
     }
   </style>
+  <style>
+  .center-xy {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+  }
+  </style>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -182,6 +189,62 @@ Dr Stefano Coretta
 <h2>True or false?</h2>
 <iframe allowfullscreen="" frameborder="0" height="100%" mozallowfullscreen="" style="min-width: 500px; min-height: 355px" src="https://app.wooclap.com/events/DLCGFB/questions/67ee52eeb1a525d6d1d98282" width="100%"></iframe>
 </section>
+<section id="growing-plants-on-mars" class="slide level2">
+<h2>Growing plants on Mars</h2>
+
+<img data-src="img/mars.png" class="quarto-figure quarto-figure-center r-stretch" width="300"></section>
+<section id="will-different-light-colour-affect-growth" class="slide level2">
+<h2>Will different light colour affect growth?</h2>
+
+<img data-src="img/nhst-p-value-1.png" class="center-xy r-stretch"></section>
+<section id="will-different-light-colour-affect-growth-1" class="slide level2">
+<h2>Will different light colour affect growth?</h2>
+
+<img data-src="img/nhst-p-value-2.png" class="center-xy r-stretch"></section>
+<section id="will-different-light-colour-affect-growth-2" class="slide level2">
+<h2>Will different light colour affect growth?</h2>
+
+<img data-src="img/nhst-p-value-3.png" class="center-xy r-stretch"></section>
+<section id="will-different-light-colour-affect-growth-3" class="slide level2">
+<h2>Will different light colour affect growth?</h2>
+
+<img data-src="img/nhst-p-value-4.png" class="center-xy r-stretch"></section>
+<section id="the-p-value" class="slide level2">
+<h2>The <span class="math inline">\(p\)</span>-value</h2>
+
+<img data-src="img/nhst-replicate-1.png" class="r-stretch"></section>
+<section id="the-p-value-1" class="slide level2">
+<h2>The <span class="math inline">\(p\)</span>-value</h2>
+
+<img data-src="img/nhst-replicate-2.png" class="r-stretch"></section>
+<section id="the-p-value-2" class="slide level2">
+<h2>The <span class="math inline">\(p\)</span>-value</h2>
+
+<img data-src="img/nhst-replicate-3.png" class="r-stretch"></section>
+<section id="the-p-value-3" class="slide level2">
+<h2>The <span class="math inline">\(p\)</span>-value</h2>
+
+<img data-src="img/nhst-assume-null.png" class="quarto-figure quarto-figure-center r-stretch" width="400"></section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img data-src="index_files/figure-revealjs/null-probs-1.png" class="r-stretch"></section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="index_files/figure-revealjs/rare-events-1.png" class="r-stretch"></section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+
+<img data-src="index_files/figure-revealjs/p-value-1.png" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="index_files/figure-revealjs/p-value-2-1.png" class="r-stretch"></section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+
+<img data-src="img/nhst-blue-houses.png" class="quarto-figure quarto-figure-center r-stretch" width="400"></section>
 <section id="the-null-ritual" class="slide level2">
 <h2>The ‘null ritual’</h2>
 <div class="box-tip">
@@ -228,6 +291,27 @@ Dr Stefano Coretta
 <li>The usefulness of the procedure is limited among others to situations where you have a disjunction of hypotheses (e.g., either <span class="math inline">\(\mu_1 = 8\)</span> or <span class="math inline">\(\mu_2 = 10\)</span> is true) and where you can make meaningful cost-beneﬁt trade-offs for choosing alpha and beta.</li>
 </ol>
 <p><span class="citation" data-cites="gigerenzer2004">(<a href="#/references" role="doc-biblioref" onclick="">Gigerenzer 2004: 590–1</a>)</span></p>
+</div>
+</section>
+<section id="level-of-significance" class="slide level2">
+<h2>Level of significance</h2>
+<div class="box-warning">
+<ul>
+<li><strong>Early Fisher</strong>
+<ul>
+<li>Mere convention of 5%.</li>
+</ul></li>
+<li><strong>Neyman and Pearson</strong>
+<ul>
+<li><span class="math inline">\(\alpha\)</span>: probability of wrongly rejecting <span class="math inline">\(H_1\)</span> (vs <span class="math inline">\(H_2\)</span>), Type-I error</li>
+</ul></li>
+<li><strong>Later Fisher</strong>
+<ul>
+<li>Rejects idea of convention and Type-I and II errors.</li>
+<li>Exact level of significance, i.e.&nbsp;exact <span class="math inline">\(p\)</span>.</li>
+<li>“You communicate information; you do not make yes–no decisions.” <span class="citation" data-cites="gigerenzer2004">(<a href="#/references" role="doc-biblioref" onclick="">Gigerenzer 2004: 593</a>)</span>.</li>
+</ul></li>
+</ul>
 </div>
 </section>
 <section id="references" class="slide level2 smaller scrollable">

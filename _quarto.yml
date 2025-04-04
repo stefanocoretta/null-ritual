@@ -2,12 +2,13 @@ project:
   type: website
 
 website:
-  title: "null-ritual"
+  title: "Null ritual"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: slides/index.qmd
+        text: Slides
 
 format:
   html:

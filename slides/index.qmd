@@ -8,6 +8,15 @@ format:
     theme: [default, "custom.scss"]
     history: false
     fig-align: center
+    include-in-header: 
+      text: |
+        <style>
+        .center-xy {
+          margin: 0;
+          position: absolute;
+          top: 30%;
+        }
+        </style>
 filters:
   - tachyonsextra
 execute: 
@@ -48,6 +57,177 @@ Suppose you have a treatment that you suspect may alter performance on a certain
 ```{=html}
 <iframe allowfullscreen frameborder="0" height="100%" mozallowfullscreen style="min-width: 500px; min-height: 355px" src="https://app.wooclap.com/events/DLCGFB/questions/67ee52eeb1a525d6d1d98282" width="100%"></iframe>
 ```
+
+## Growing plants on Mars
+
+![](img/mars.png){fig-align="center" width="300"}
+
+## Will different light colour affect growth?
+
+![](img/nhst-p-value-1.png){.center-xy}
+
+## Will different light colour affect growth?
+
+![](img/nhst-p-value-2.png){.center-xy}
+
+## Will different light colour affect growth?
+
+![](img/nhst-p-value-3.png){.center-xy}
+
+## Will different light colour affect growth?
+
+![](img/nhst-p-value-4.png){.center-xy}
+
+## The $p$-value
+
+![](img/nhst-replicate-1.png)
+
+## The $p$-value
+
+![](img/nhst-replicate-2.png)
+
+## The $p$-value
+
+![](img/nhst-replicate-3.png)
+
+## The $p$-value
+
+![](img/nhst-assume-null.png){fig-align="center" width="400"}
+
+## 
+
+```{r null-probs, fig.width=13, fig.height=7, dpi=600, fig.retina=TRUE}
+x <- seq(-4, 4, by = 0.01)
+y <- dnorm(x)
+
+labels <- tibble(
+  x = c(0,  -2.5, 2),
+  y = c(-0.025, 0.36, 0.1),
+  labs = c("0", "high probability", "low probability")
+)
+
+arrows <- tibble(
+  x1 = c(-1.5, 2.5),
+  y1 = c(0.4 - 0.025, 0.1 - 0.025),
+  x2 = c(-0.4, 3),
+  y2 = c(0.4 - 0.015, 0.025)
+)
+
+ggplot() +
+  aes(x, y) +
+  geom_ribbon(aes(ymin = 0, ymax = y), fill = "#7570b3", alpha = 0.4) +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = max(y)), colour = "#1b9e77", size = 3) +
+  geom_text(data = labels, aes(x, y, label = labs), size = 15, family = "Brandon Grotesque Medium") +
+  geom_curve(
+    data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.3, "inch"), type = "closed"), size = 1,
+    color = "gray20", curvature = -0.3
+  ) +
+  theme_void()
+```
+
+## 
+
+```{r rare-events, fig.width=13, fig.height=7, dpi=600, fig.retina=TRUE}
+x <- seq(-4, 4, by = 0.01)
+y <- dnorm(x)
+
+labels <- tibble(
+  x = c(0, 2, -2.5, 3),
+  y = c(-0.025, -0.025, 0.36, 0.15),
+  labs = c("0", "<- smaller ---- bigger ->", "high probability", "RARE\nEVENT")
+)
+
+arrows <- tibble(
+  x1 = c(-1.5, 3),
+  y1 = c(0.4 - 0.025, 0.1 - 0.025),
+  x2 = c(-0.4, 3),
+  y2 = c(0.4 - 0.015, 0.025)
+)
+
+ggplot() +
+  aes(x, y) +
+  geom_ribbon(aes(ymin = 0, ymax = y), fill = "#7570b3", alpha = 0.4) +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = max(y)), colour = "#1b9e77", size = 3) +
+  geom_text(data = labels, aes(x, y, label = labs), size = c(15, 11, 15, 16), family = "Brandon Grotesque Medium", colour = c("black", "#d95f02", "black", "#d95f02")) +
+  geom_curve(
+    data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.3, "inch"), type = "closed"), size = 1,
+    color = c("gray20", "#d95f02"), curvature = -0.3
+  ) +
+  theme_void()
+```
+
+## 
+
+```{r p-value, fig.width=13, fig.height=7, dpi=600, fig.retina=TRUE}
+x <- seq(-4, 4, by = 0.01)
+y <- dnorm(x)
+
+labels <- tibble(
+  x = c(0, qnorm(0.03, lower.tail = FALSE), 3),
+  y = c(-0.025, -0.025, 0.1),
+  labs = c("0", "+2cm", "p = 0.03")
+)
+
+arrows <- tibble(
+  x1 = c(3),
+  y1 = c(0.1 - 0.025),
+  x2 = c(2.1),
+  y2 = c(0.02)
+)
+
+ggplot() +
+  aes(x, y) +
+  geom_ribbon(aes(ymin = 0, ymax = y), fill = "#7570b3", alpha = 0.4) +
+  geom_ribbon(aes(x = ifelse(x >= qnorm(0.03, lower.tail = FALSE), x, NA), ymin = 0, ymax = y), fill = "#1b9e77", alpha = 0.7) +
+  geom_text(data = labels, aes(x, y, label = labs), size = c(15, 15, 16), family = "Brandon Grotesque Medium", colour = c("black", "black", "#d95f02")) +
+  geom_curve(
+    data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.3, "inch"), type = "closed"), size = 1,
+    color = c("#d95f02"), curvature = -0.3
+  ) +
+  annotate("point", x = qnorm(0.03, lower.tail = FALSE), y = 0, size = 8) +
+  theme_void()
+```
+
+## 
+
+```{r p-value-2, fig.width=13, fig.height=7, dpi=600, fig.retina=TRUE}
+x <- seq(-4, 4, by = 0.01)
+y <- dnorm(x)
+
+labels <- tibble(
+  x = c(0, qnorm(0.03, lower.tail = FALSE), 3),
+  y = c(-0.025, -0.025, 0.1),
+  labs = c("0", "+2cm", "p = 0.03")
+)
+
+arrows <- tibble(
+  x1 = c(3),
+  y1 = c(0.1 - 0.025),
+  x2 = c(2.1),
+  y2 = c(0.02)
+)
+
+ggplot() +
+  aes(x, y) +
+  geom_ribbon(aes(ymin = 0, ymax = y), fill = "#7570b3", alpha = 0.4) +
+  geom_ribbon(aes(x = ifelse(x >= qnorm(0.03, lower.tail = FALSE), x, NA), ymin = 0, ymax = y), fill = "#1b9e77", alpha = 0.7) +
+  geom_text(data = labels, aes(x, y, label = labs), size = c(15, 15, 16), family = "Brandon Grotesque Medium", colour = c("black", "black", "#d95f02")) +
+  geom_curve(
+    data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.3, "inch"), type = "closed"), size = 1,
+    color = c("#d95f02"), curvature = -0.3
+  ) +
+  annotate("point", x = qnorm(0.03, lower.tail = FALSE), y = 0, size = 8) +
+  annotate("text", x = 2.5, y = 0.35, label = "p-value = The probability of finding a certain difference,\nor a bigger difference,\nassuming that there is no difference", size = 5) +
+  theme_void()
+```
+
+## 
+
+![](img/nhst-blue-houses.png){fig-align="center" width="400"}
 
 ## The 'null ritual'
 
@@ -93,6 +273,19 @@ The null ritual would have been rejected by the statisticians it is attributed t
 3.  The usefulness of the procedure is limited among others to situations where you have a disjunction of hypotheses (e.g., either $\mu_1 = 8$ or $\mu_2 = 10$ is true) and where you can make meaningful cost-beneﬁt trade-offs for choosing alpha and beta.
 
 [@gigerenzer2004, pp. 590-1]
+:::
+
+## Level of significance
+
+::: box-warning
+-   **Early Fisher**
+    -   Mere convention of 5%.
+-   **Neyman and Pearson**
+    -   $\alpha$: probability of wrongly rejecting $H_1$ (vs $H_2$), Type-I error
+-   **Later Fisher**
+    -   Rejects idea of convention and Type-I and II errors.
+    -   Exact level of significance, i.e. exact $p$.
+    -   "You communicate information; you do not make yes–no decisions." [@gigerenzer2004, pp. 593].
 :::
 
 ## References
